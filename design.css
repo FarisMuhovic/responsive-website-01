@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Helvetica, sans-serif;
+  --maincolorfont: white;
+  --secondarycolorfont: #e96f33;
+  scroll-behavior: smooth;
+}
+.firstsecimg {
+  background-image: url("./wallpapersden.com_canada-lake-camping-hd-photography_2560x1440.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px calc(2vh + 5px);
+  line-height: calc(5vh + 20px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.logo {
+  color: var(--maincolorfont);
+  width: 10%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.navigations {
+  display: flex;
+  justify-content: flex-end;
+  font-size: calc(0.4vw + 12px);
+  list-style: none;
+  width: 90%;
+  text-transform: capitalize;
+  text-align: center;
+}
+.home {
+  color: var(--secondarycolorfont);
+  text-decoration: underline;
+}
+li {
+  color: var(--maincolorfont);
+  padding-left: 3%;
+  
+}
+li:hover{
+  color: var(--secondarycolorfont);
+  transition: color 0.5s;
+}
+.btncontainer {
+  width: calc(8vw + 25px);
+}
+.contactbtn {
+  background-color: var(--secondarycolorfont);
+  color: var(--maincolorfont);
+  border: none;
+  height: 60%;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 80%;
+  text-transform: capitalize;
+}
+.contactbtn:hover  {
+  background-color: var(--maincolorfont);
+  color: var(--secondarycolorfont);
+  transition: background-color 0.3s , color 0.3s;
+}
+.contactbtn:not(:hover) {
+  background-color: var(--secondarycolorfont);
+  color: var(--maincolorfont);
+  border: none;
+  transition: background-color 0.3s , color 0.3s;
+}
+.section1 {
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.colorful {
+  position: relative;
+}
+.colorful::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: var(--secondarycolorfont);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+.exploretext {
+  padding: 0.1vw;
+  color: var(--maincolorfont);
+  text-transform: capitalize;
+  font-size: calc(1vw + 15px);
+  margin-bottom: 5vh;
+}
+.gifttext {
+  color: var(--maincolorfont);
+  font-size: calc(2vw + 15px);
+  text-transform: uppercase;
+}
+.learnmorebtn {
+  width: calc(8vw + 120px);
+  font-weight: 800;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  margin: calc(0.1vh + 15px);
+}
+.learnmorebtn:hover {
+  background-color: var(--secondarycolorfont);
+  color: var(--maincolorfont);
+  border: none;
+  transition: background-color 0.3s , color 0.3s;
+}
+.learnmorebtn:not(:hover) {
+  background-color: var(--maincolorfont);
+  color: var(--secondarycolorfont);
+  border: none;
+  transition: background-color 0.3s , color 0.3s;
+}
+.events {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10vh 1fr;
+  justify-items: center;
+  margin: 50px;
+}
+.eventheader {
+  grid-column: 1 / -1;
+  align-self: center;
+  position: relative;
+  font-size: calc(1.5vh + 20px);
+  margin: calc(2vh + 15px);
+}
+.eventheader::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 5px;
+  background-color: var(--secondarycolorfont);
+}
+.everest , .holidays {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1vh;
+  justify-self: center;
+}
+.hikeimgs:hover {
+  transform: scale(1.05);
+  transition: transform 1s ease-out;
+}
+.hikeimgs:not(:hover) {
+  transform: scale(1);
+  transition: transform 1s ease-out;
+}
+
+.hikeimgs {
+  margin-top: 5vh;
+  width: 100%;
+}
+.learnmore {
+  background-color: var(--secondarycolorfont);
+  color: var(--maincolorfont);
+  border: none;
+  height: calc(3vh + 15px);
+  width: 55%;
+  margin: 1vh;
+  border-radius: 20px;
+  font-size: 100%;
+  text-transform: capitalize;
+}
+.learnmore:hover  {
+  background-color: var(--maincolorfont);
+  color: var(--secondarycolorfont);
+  border: 2px solid var(--secondarycolorfont);
+  transition: background-color 0.3s , color 0.3s , border 0.3s;
+}
+.learnmore:not(:hover) {
+  background-color: var(--secondarycolorfont);
+  color: var(--maincolorfont);
+  border: none;
+  transition: background-color 0.3s , color 0.3s , border 0.3s;
+}
+.worldsection {
+  background-image: url("https://www.salomon.com/sites/default/files/articles/images/hiking-gear-what-to-bring-men.jpg?fit=cover&orientation=1&optimize=low&bg-color=f5f5f5&format=pjpg&auto=webp&dpr=1.25");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left ;
+  justify-content: center;
+
+  padding: 5vh 5vw;
+}
+.titleworld {
+  width: 50%;
+  text-align: center;
+  color: var(--maincolorfont);
+  font-size: calc(5vw + 15px);
+  margin: 5vh 0px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.493);
+  background-color: rgba(0, 0, 0, 0.226);
+  
+}
+.titleworld::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 37.5%;
+  width: 25%;
+  height: 5px;
+  background-color: var(--secondarycolorfont);
+}
+.textworld {
+  width: 50%;
+  margin-bottom: 5vh;
+  color: var(--maincolorfont);
+  background-color: #e9703354;
+  border-radius: 25px;
+  text-align: center;
+  font-size: calc(0.3vh + 15px);
+}
+.worldbtn {
+  background-color: var(--secondarycolorfont);
+  color: var(--maincolorfont);
+  border: none;
+  height: calc(3vh + 15px);
+  width: 25%;
+  margin: 1vh 12.5%;
+  border-radius: 20px;
+
+  text-transform: capitalize;
+}
+.worldbtn:hover  {
+  background-color: var(--maincolorfont);
+  color: var(--secondarycolorfont);
+  border: 2px solid var(--secondarycolorfont);
+  transition: background-color 0.3s , color 0.3s , border 0.3s;
+}
+.worldbtn:not(:hover) {
+  background-color: var(--secondarycolorfont);
+  color: var(--maincolorfont);
+  border: none;
+  transition: background-color 0.3s , color 0.3s , border 0.3s;
+}
+.upcomingsection {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: 40vh 40vh;
+  margin: 10vh ;
+}
+.leftsidetext {
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newsheader {
+  font-size: calc(2vw + 20px);
+  width: 70%;
+  position: relative;
+  margin-bottom: calc(3vh + 10px);
+  line-height: calc(5vh + 10px);
+}
+.textnews {
+  font-size: calc(1vh + 7px);
+  width: 70%;
+}
+.newsheader::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30%;
+  height: 5px;
+  background-color: var(--secondarycolorfont);
+}
+.newsbtn {
+  background-color: var(--secondarycolorfont);
+  color: var(--maincolorfont);
+  border: none;
+  height: calc(3vh + 15px);
+  width: calc(25% + 50px);
+  margin: 1vh 12.5%;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+.newsbtn:hover  {
+  background-color: var(--maincolorfont);
+  color: var(--secondarycolorfont);
+  border: 2px solid var(--secondarycolorfont);
+  transition: background-color 0.3s , color 0.3s , border 0.3s;
+}
+.newsbtn:not(:hover) {
+  background-color: var(--secondarycolorfont);
+  color: var(--maincolorfont);
+  border: none;
+  transition: background-color 0.3s , color 0.3s , border 0.3s;
+}
+.imgnews {
+  padding: 5%;
+  width: 100%;
+  height: auto;
+}
+.imgnews:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+.imgnews:not(:hover){
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+.imgnews1 , .imgnews2 {
+  align-self: flex-end;
+}
+.imgnews3 , .imgnews4 {
+  align-self: flex-start;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 2vh 1vw;
+}
+
+@media (max-width: 600px) {
+  .home , .tours , .explore , .about {
+    display: none;
+  }
+  .firstsecimg {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    object-fit: scale-down;
+  }
+  .events {
+    grid-template-columns: 1fr;
+  }
+  .hikeimgs {
+    margin: 0;
+  }
+  .eventheader {
+    font-size: calc(0.5vh + 20px);
+  }
+  .worldsection  {
+    align-items: center;
+  }
+  .titleworld::before {
+    width: 100%;
+    left: 0;
+  }
+  .eventheader::before {
+    left: 0;
+    width: 100%;
+  }
+  .upcomingsection {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .newsheader , .textnews{
+    width: 100%;
+    text-align: center;
+  }
+  .newsheader::before {
+    width: 100%;
+  }
+  footer {
+    font-size: 12px;
+  }
+  .btncontainer {
+    width: calc(12vw + 25px);
+  }
+}
